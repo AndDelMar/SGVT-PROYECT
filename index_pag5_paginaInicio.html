@@ -8,28 +8,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="fondo">
     <div class="container text-center text-bg-light color1-azul-oscuro">
         <p class="h1 fw-bold">Jueves 14 Marzo, 2024</p>
         <h3>Territorios recomendados</h3>
     </div>
 
     <section class="container">
-        <div class="row">
-            <article class="col color1-azulClarito color1-azul-oscuro border-top border-start border-5 borderC-darkBlue text-center m-2 m-sm-3 m-md-4 m-lg-5 rounded-4">
+        <!-- Creo que ya entendí, cambié la dirección del flex (por defecto row) por column para tamaños menores a md-->
+        <div class="d-flex flex-column flex-md-row">  
+            <article class="col-12 col-md-3  color1-azulClarito color1-azul-oscuro border-top border-start border-5 borderC-darkBlue text-center m-2 m-sm-3 m-md-4 m-lg-5 rounded-4">
                 <h2>[Nombre]</h2>
                 <h3>Última visita</h3>
                 <p>[Número de semanas]</p>
                 <p>[Fecha]</p>
             </article>
 
-            <article class="col color1-azulClarito color1-azul-oscuro border-top border-start border-5 borderC-darkBlue text-center m-2 m-sm-3 m-md-4 m-lg-5 rounded-4">
+            <article class="col-12 col-md-3  color1-azulClarito color1-azul-oscuro border-top border-start border-5 borderC-darkBlue text-center m-2 m-sm-3 m-md-4 m-lg-5 rounded-4">
                 <h2>[Nombre]</h2>
                 <h3>Última visita</h3>
                 <p>[Número de semanas]</p>
                 <p>[Fecha]</p>
             </article>
-            <article class="col color1-azulClarito color1-azul-oscuro border-top border-start border-5 borderC-darkBlue text-center m-2 m-sm-3 m-md-4 m-lg-5 rounded-4">
+            <article class="col-12 col-md-3  color1-azulClarito color1-azul-oscuro border-top border-start border-5 borderC-darkBlue text-center m-2 m-sm-3 m-md-4 m-lg-5 rounded-4">
                 <h2>[Nombre]</h2>
                 <h3>Última visita</h3>
                 <p>[Número de semanas]</p>
