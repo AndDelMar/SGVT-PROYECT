@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+  </head>
+  <body>
     <nav class="navbar navbar-expand-sm navbar-dark color1-azul">
-        <div class="container-fluid">
-          
-          <a class="navbar-brand px-5 fs-4" href="#"><img src="image.png" width="100"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-            
-            <!-- Opciones menú -->
-            <ul class="navbar-nav">
-            
-                <li class="nav-item dropdown px-5 border-start borderC-darkBlue">
-                    <button class="btn color1-azul-oscuro fw-bold fs-6">
-                    Registrar Una Visita
-                    </button>
-                </li>
-                <li class="nav-item dropdown px-5 border-start borderC-darkBlue">
-                    <button class="btn fw-bold fs-6 text-white">
-                    Gestionar Registros
-                </li>
-
-                <li class="nav-item dropdown px-5 border-start borderC-darkBlue">
-                    <button class="btn fw-bold fs-6 text-white">
-                    Gestionar Territorios
-                </li>
-                
-                <!-- Perfil -->
-                <div class="dropdown text-end">
-                    <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle mx-4 mx-sm-0 px-5" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="User.png" alt="mdo" width="40" class="rounded-circle ml-5">
-                    </a>
-                    <ul class="dropdown-menu text-small">
-                      <li><a class="dropdown-item" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Administrador</font></font></a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cerrar Sesión</font></font></a></li>
-                    </ul>
-                </div>
-
-                
-
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand px-1 px fs-4" href="#"><img src="image.png" width="100"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDarkDropdown">
+          <!-- Opciones menú -->
+          <ul class="navbar-nav mt-4 mt-md-0">
+            <li class="nav-item dropdown px-lg-3 px-xl-5 border-start borderC-darkBlue d-flex align-items-center">
+                <button class="btn color1-azul-oscuro fw-bold fs-6">
+                Registrar Una Visita
+                </button>
+            </li>
+            <li class="nav-item dropdown px-lg-3 px-xl-5  border-start borderC-darkBlue d-flex align-items-center">
+                <button class="btn fw-bold fs-6 text-white">
+                Gestionar Registros
+            </li>
+            <li class="nav-item dropdown px-lg-3 px-xl-5 border-start borderC-darkBlue d-flex align-items-center">
+                <button class="btn fw-bold fs-6 text-white">
+                Gestionar Territorios
+            </li>
+            <!-- Perfil -->
+            <li class="dropdown text-start d-flex align-items-center border-start borderC-darkBlue px-md-3">
+              <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle mx-3 mx-sm-0 px-lg-5" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="User.png" alt="mdo" width="40" class="rounded-circle ml-5">
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Administrador</font></font></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cerrar Sesión</font></font></a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-
-</body>
+      </div>
+    </nav>
+  </body>
 </html>

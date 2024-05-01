@@ -9,6 +9,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="fondo">
+    <nav class="navbar navbar-expand-sm navbar-dark color1-azul">
+        <div class="container-fluid">
+          <a class="navbar-brand px-1 px fs-4" href="#"><img src="image.png" width="100"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDarkDropdown">
+            <!-- Opciones menú -->
+            <ul class="navbar-nav mt-4 mt-md-0">
+              <li class="nav-item dropdown px-lg-3 px-xl-5 border-start borderC-darkBlue d-flex align-items-center">
+                  <button class="btn color1-azul-oscuro fw-bold fs-6">
+                  Registrar Una Visita
+                  </button>
+              </li>
+              <li class="nav-item dropdown px-lg-3 px-xl-5  border-start borderC-darkBlue d-flex align-items-center">
+                  <button class="btn fw-bold fs-6 text-white">
+                  Gestionar Registros
+              </li>
+              <li class="nav-item dropdown px-lg-3 px-xl-5 border-start borderC-darkBlue d-flex align-items-center">
+                  <button class="btn fw-bold fs-6 text-white">
+                  Gestionar Territorios
+              </li>
+              <!-- Perfil -->
+              <li class="dropdown text-start d-flex align-items-center border-start borderC-darkBlue px-md-3">
+                <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle mx-3 mx-sm-0 px-lg-5" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="User.png" alt="mdo" width="40" class="rounded-circle ml-5">
+                </a>
+                <ul class="dropdown-menu text-small">
+                  <li><a class="dropdown-item" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Administrador</font></font></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cerrar Sesión</font></font></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 
     <section class="container">
         <div class="row">
@@ -17,18 +54,18 @@
             </div>
 
             <div class="col-12 col-md-5 col-lg-4 ">
-                <div class="color1-azul rounded-4 p-5">
+                <div class="color1-azul rounded-4 p-5 my-3">
                     <h2 class="col-12 text-center color1-azul-oscuro">[Territorio]</h2>
 
                     <div class="my-4">
                         <label for="exampleInputEmail1" class="form-label fw-bold color1-azul-oscuro">Nombre del Capitán:</label>
-                        <input type="text" class="col-12 form-registro-visita" id="inputCapitan">
+                        <input type="text" class="col-12 form-control form-registro-visita" id="inputCapitan">
                         
                     </div>
 
                     <div class="my-4">
                         <label for="exampleInputPassword1" class="col-12 form-label fw-bold color1-azul-oscuro">Fecha de visita: </label>
-                        <input type="date" class="col-12 form-registro-visita" id="inputFecha">
+                        <input type="date" class="col-12 form-control form-registro-visita" id="inputFecha">
                     </div>
                     
                     <div class="my-4 row justify-content-center">
