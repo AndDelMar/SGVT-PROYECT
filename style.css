@@ -1,3 +1,6 @@
+body {
+    box-sizing: border-box;
+}
 .color1-azul{
     background-color: #41c1ba;
 }
