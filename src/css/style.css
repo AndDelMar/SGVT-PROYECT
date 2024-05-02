@@ -1,19 +1,35 @@
-.color1-azul{
-    background-color: #41c1ba;
-}
 .color1-azulclaro2{
     background-color: #62DDD6;
-}
-.color1-azul-oscuro{
-    color: #0c1775;
-}
-
-.borderC-darkBlue{
-    border-color: #0c1775;
-}
-.btn-primary{
-    background-color: red;
 }
 .full-height {
     height: 100vh;
   }
+.color1-azul-oscuro2{
+  background-color: #365B6D;
+}
+body {
+    box-sizing: border-box;
+}
+.color1-azul{
+    background-color: #41c1ba;
+}
+
+.color1-azul-oscuro{
+    color: #0c1775 !important;
+}
+
+.borderC-darkBlue{
+    border-color: #0c1775 !important;
+}
+
+.borderC-celeste{
+    border-color: #41c1ba;
+}
+
+.color1-azulClarito{
+    background-color: #ccf3f2;
+}
+
+.fondo{
+    background-color: #f4f5f5;
+}
