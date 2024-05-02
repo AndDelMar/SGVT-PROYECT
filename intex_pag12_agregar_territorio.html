@@ -10,65 +10,100 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body class="fondo ">
-    <div class="container">
-        <div class="row px-2">
-            <section class=" mt-3 mt-md-0 p-4 d-flex justify-content-center align-items-center col-12 col-md-4 rounded-4 color1-azul">
-                <form>
-                    <h2 class="mt-4 color1-azul-oscuro text-center">Agregar Territorio</h2>
-
-                    <div class="my-3">
-                        <label for="formRegistroTerritorio" class="form-label fs-5">Nombre del Territorio:</label>
-                        <input type="text" class="col-12 form-registro-visita" id="inputNombreTerritorio">
-                    </div>
-
-                    <div class="my-3">
-                        <label for="formRegistroTerritorio" class="col-12 form-label fs-5">Categoría: </label>
-                        <input type="text" class="col-12 form-registro-visita" id="inputCategoria">
-                    </div>
-
-                    <div class="d-flex flex-column align-items-center">
-                        <i class="bi bi-upload d-block py-2 text-white" style="font-size: 2rem"></i>
-                        <button type="button" class="btn btn-light">Cargar</button>
-                    </div>
-                </form>
-            </section>
-
-            <div class="d-flex align-items-center mt-3 mt-md-0 col-12 col-md-5">    
-                <img class="col-12 rounded-4 border borderC-darkBlue" src="mapa_inicio.jpg">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark color1-azul">
+            <div class="container-fluid">
+                <a class="navbar-brand px-1 px fs-4" href="./index_pag5_paginaInicio.html"><img src="image.png" width="100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDarkDropdown">
+                    <!-- Opciones menú -->
+                    <ul class="navbar-nav mt-4 mt-md-0">
+                        <li class="nav-item dropdown px-lg-3 px-xl-5 border-start borderC-darkBlue d-flex align-items-center">
+                            <a class="btn fw-bold fs-6 text-white" href="./index_pag6_registrar_una_visita.html">
+                            Registrar Una Visita
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown px-lg-3 px-xl-5  border-start borderC-darkBlue d-flex align-items-center">
+                            <a class="btn fw-bold fs-6 text-white" href="">
+                            Gestionar Registros
+                        </li>
+                        <li class="nav-item dropdown px-lg-3 px-xl-5 border-start borderC-darkBlue d-flex align-items-center">
+                            <a class="btn fw-bold fs-6 color1-azul-oscuro" href="./intex_pag12_agregar_territorio.html">
+                            Gestionar Territorios
+                        </li>
+                        <!-- Perfil -->
+                        <li class="dropdown text-start d-flex align-items-center border-start borderC-darkBlue px-md-3">
+                            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle mx-3 mx-sm-0 px-lg-5" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="User.png" alt="mdo" width="40" class="rounded-circle ml-5">
+                            </a>
+                            <ul class="dropdown-menu text-small">
+                            <li><a class="dropdown-item" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Administrador</font></font></a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./index_pag3_inicio_sesion.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cerrar Sesión</font></font></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <section class="mt-3 mt-md-0 col-12 col-sm-10 offset-sm-1 offset-md-0 col-md-2 justify-content-center  d-md-block d-flex flex-wrap color1-azul rounded-5 align-items-center">
-                <button class="btn">
-                    <i class="bi bi-pencil m-1 text-white" style="font-size: 2rem"></i>
-                    <p>Agregar calles</p>
-                </button>
-
-                <button class="btn col-4 col-md-12">
-                    <i class="bi bi-eraser m-1 text-white" style="font-size: 2rem"></i>
-                    <p>Borrar calles</p>
-                </button>
-
-                <button class="btn col-4 col-md-12">
-                    <i class="bi bi-geo-alt m-1 text-white" style="font-size: 2rem"></i>
-                    <p>Agregar punto de referencia</p>
-                </button>
-                
-                
-            </section>
-
-        </div>
-     
-        <div class="row d-flex justify-content-center">
-            <button type="button" class="col-auto m-2 btn btn-outline-secondary color1-azulClarito fw-bold color1-azul-oscuro">Atrás</button>
-            <button type="submit" class="col-auto m-2 btn btn-outline-secondary color1-azulClarito fw-bold color1-azul-oscuro">Guardar</button>
-        </div>
-        
-    </div>
+        </nav>
+    </header>
+    <main class="my-4">
+        <div class="container">
+            <div class="row px-2">
+                <section class=" mt-3 mt-md-0 p-4 d-flex justify-content-center align-items-center col-12 col-md-4 offset-lg-1 rounded-4 color1-azul my-md-2">
+                    <form>
+                        <h2 class="mt-4 color1-azul-oscuro text-center">Agregar Territorio</h2>
     
+                        <div class="my-3">
+                            <label for="formRegistroTerritorio" class="form-label fs-5">Nombre del Territorio:</label>
+                            <input type="text" class="col-12 form-registro-visita" id="inputNombreTerritorio">
+                        </div>
+    
+                        <div class="my-3">
+                            <label for="formRegistroTerritorio" class="col-12 form-label fs-5">Categoría: </label>
+                            <input type="text" class="col-12 form-registro-visita" id="inputCategoria">
+                        </div>
+    
+                        <div class="d-flex flex-column align-items-center">
+                            <i class="bi bi-upload d-block py-2 text-white" style="font-size: 2rem"></i>
+                            <button type="button" class="btn btn-light">Cargar</button>
+                        </div>
+                    </form>
+                </section>
+    
+                <div class="d-flex align-items-center mt-3 mt-md-0 col-12 col-md-6 col-lg-5">    
+                    <img class="col-12 rounded-4 border borderC-darkBlue" src="mapa_inicio.jpg">
+                </div>
 
-
-
-
-
-
+    
+                <section class="col-12 col-sm-10 offset-sm-1 offset-md-0 col-md-2 col-lg-1 px-0 my-auto" >
+                    <div class=" px-1 mt-3 mt-md-0 d-flex flex-wrap color1-azul rounded-5 justify-content-center align-items-center flex-md-column">
+                        <button class="btn px-0">
+                            <i class="bi bi-pencil m-1 text-white" style="font-size: 2rem"></i>
+                            <p style="font-size:14px">Agregar calles</p>
+                        </button>
+        
+                        <button class="btn col-4 col-md-12 px-0">
+                            <i class="bi bi-eraser m-1 text-white" style="font-size: 2rem"></i>
+                            <p style="font-size:14px">Borrar calles</p>
+                        </button>
+        
+                        <button class="btn col-4 col-md-12 px-0">
+                            <i class="bi bi-geo-alt m-1 text-white" style="font-size: 2rem"></i>
+                            <p style="font-size:14px">Agregar punto de referencia</p>
+                        </button>
+                    </div> 
+                </section>
+    
+            </div>
+         
+            <div class="row d-flex justify-content-center mt-3">
+                <button type="button" class="col-auto m-2 btn btn-outline-secondary color1-azulClarito fw-bold color1-azul-oscuro">Atrás</button>
+                <button type="submit" class="col-auto m-2 btn btn-outline-secondary color1-azulClarito fw-bold color1-azul-oscuro">Guardar</button>
+            </div>
+            
+        </div>
+    </main>
 </body>
